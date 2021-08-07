@@ -34,14 +34,9 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-        name: Deploy
-        on:
-          push:
-            branches:
-              - master
-        jobs:
-          build:
-            runs-on: ubuntu-latest
+        
+    - name: Deploy  
+      runs-on: ubuntu-latest
             steps:
               - uses: actions/checkout@v2
               - uses: akhileshns/heroku-deploy@v3.0.0
