@@ -35,9 +35,3 @@ jobs:
       run: |
         pytest
         
-    - uses: akhileshns/heroku-deploy@v3.0.0
-          with:
-              heroku_api_key: f0cce90a-9549-4405-b698-b964beca44e9
-              heroku_app_name: "heroku-gitlab-eig"
-              heroku_email: "carlos_vs@outlook.com"
-              usedocker: false
